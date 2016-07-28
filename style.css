@@ -253,18 +253,28 @@ button {
   color: white;
 }
 
+.mobile-send {
+  opacity: 0;
+}
+
 @media only screen and (max-device-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
   .nav-list {
     display: none;
   }
 
   .nav {
-    height: 100vh;
+    height: 80vh;
+    padding: 0;
   }
 
   .nav-top {
     position: relative;
     top: 0px;
+    padding: 0;
   }
 
   .hamburger {
@@ -272,13 +282,103 @@ button {
     right: 20px;
     top: 10px;
     position: absolute;
+    padding: 10px;
+  }
+
+  .hero-text {
+    font-size: 35px;
+    padding: 100px 10px;
   }
 
   .logo-text {
     position: absolute;
     left: 20px;
     top: 10px;
+    font-size: 45px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .centre-text {
+    padding: 30px;
+  }
+
+  .centre-text h1 {
+    font-size: 30px;
+  }
+
+  .centre-text p {
+    font-size: 16px;
+  }
+
+  .stock-img, .centre-text {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .footer, .right, .partner, .footer-logo, .footer-list {
+    display: none;
+  }
+
+  .form-text, .email-line {
+    line-height: 30px;
     font-size: 20px;
+    margin: 0;
+    float: none;
+  }
+
+  .email-line {
+    width: 80vw;
+    display: inline-block;
+    line-height: 50px;
+  }
+
+  .form {
+    display: block;
+    padding: 10px;
+  }
+
+  .mobile-send {
+    opacity: 100;
+    border: none;
+    display: inline-block;
+    line-height: 30px;
+    position: fixed;
+    right: 10px;
+    font-size: 18px;
+  }
+
+  .send {
+    display: none;
+  }
+
+  .footer-bottom {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-social p {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: center;
+  }
+
+  .ring {
+    margin-right: 10px;
+  }
+
+  .lower-footer {
+    padding: 5px;
+    text-align: center;
   }
 
 }
